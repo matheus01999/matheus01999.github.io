@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portifolio | Matheus Rocha</title>
+</head>
+<body>
+    <nav style="display: block;">
+        <ul>
+            <li><a href="#P1">Contatos</a></li>
+            <li><a href="#P2">Sobre-mim</a></li>
+            <li><a href="#P3">Projetos</a></li>
+            <li><a href="#P4">Habilidades</a></li>
+        </ul>
+    </nav>
+
+       
+
+    <main>
+        <div id="P1">
+            <p class="apresentacao">Ola tudo bem !!! , me chamo Matheus Rocha </p>
+            <p style="font-style: italic;">Desenvolvedor Web</p>
+            <div id="contatos">
+                <button>Linkedin</button>
+                <button>Github</button>
+            </div>
+            <div id="pins" style="float: right;">
+                <a id="pins1">CSS</a>
+                <a id="pins2">JS</a>
+                <a id="pins3">Node</a>
+                <a id="pins4">React</a>
+                <a id="pins5">GitHub</a>
+                <a id="pins6">MongoDb</a>
+
+            </div>
+
+          
+           
+        </div>
+     
+        <div id="P2">
+            <h3 class="titulo">Sobre-mim !!!</h3>
+
+            <p class="sobremim">"Um profissional da tecnologia que
+                começou na área atuando como
+                auxiliar de escritório tratando de
+                imagens para um e-commerce e
+                venho me aperfeiçoando em
+                programação com javascript"</p>
+        </div>
+
+        <div id="P3">
+            <h3 class="titulo">Meus Projetos</h3>
+            <div id="projetos">
+                <a href="">Projeto</a>
+                <a href="">Projeto</a>
+                <a href="">Projetos</a>
+                <a href="">Projetos</a>
+
+            </div>
+
+            <button>Ver mais</button>
+        </div>
+
+        <div id="P4">
+            <h3 class="titulo">Habilidades</h3>
+                <div id="habilidades">
+                    <a id="selcss" onmouseenter="showcss()" onmouseout="unselected()" >CSS3</a>
+                    <a id="seljs" onclick="selectedjs()">JS</a>
+                    <a id="selnode">Node</a>
+                    <a id="selmongo">Mongo</a>
+                    <a id="selgit">GitHub</a>
+                    <a id="selreact">React</a>
+                </div>
+
+                <div id="meucss" style="display: none;">Meu nivel de css</div>
+
+
+                
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
