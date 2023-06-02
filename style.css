@@ -4,28 +4,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); /* fonte usada nos texto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
+/* CONSTRUÇÃO  DOD ESTILO BARRA DE NAVEGAÇÃO */
+
+
+/* BUTTON MENU */
+
+#buttonMenu{
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+
+#buttonMenu{
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+
+
+#trace{
+    width: 30px;
+    height: 3px;
+    background-color: #F1F6F9;
+    margin: 5px;
+    border-radius:5px ;
+    
+}
+
+#hamburger{
+    display: none;
+    
+}
+
+
+/* ESTRUTURA DA BARRA DE NAVEGAÇÃO*/
+
+nav{
+    background-color: #394867;
+    border-bottom: 5px solid #212A3E;
+    color: azure;
+    font-family: 'Mukta', sans-serif;
+    width: 100%;
+    display: block;
+    height:50px;
+ 
+    
+    
+}
+
+nav li {
+    padding: 10px;
+    text-align: center;
+    height: 10px;
+    margin: 10px;
+
+
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+
+    
+}
+
+nav #buttonMenu{
+    float: right;
+ 
+}
+
+
+
 
 
 .apresentacao {
     font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
-    font-size: 50px;    
+    font-size: 25px;
 }
 
 .titulo{
     font-family: 'Oswald', sans-serif;
-    margin-bottom: 10px;
+
+    text-align: center;
+
 }
 
 .texto {
     font-family: 'Roboto', sans-serif;
 }
 
-.sobremim{
-    padding: 100px;
-    margin: 50px;
-    font-size: 40px;
-}
+
 
 
 *{
@@ -41,44 +119,17 @@ main{
 }
 
 
-nav{
-    background-color: #394867;
-    border-bottom: 5px solid #212A3E;
-    color: azure;
-    font-family: 'Mukta', sans-serif;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 10;
-    width: 100%;
-}
-
-nav ul {
-    list-style-type: none;
-    overflow: hidden;
-}
-
-nav li {
-    float: right;
-}
-
-nav li a {
-    display: block;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+ 
 
 
 /* Pagina de contato */
 
 #P1{
-    padding: 70px;
+    padding: 40px;
     font-family: 'Mukta', sans-serif;
     font-size: 30px;
     color: white;
     height: 700px;
-    margin-top: 50px;
     background: rgb(155,164,181);
 background: -moz-linear-gradient(-45deg,  rgb(155,164,181) 1%, rgb(155,164,181) 2%, rgb(155,164,181) 2%, rgb(155,164,181) 12%, rgb(155,164,181) 50%, rgb(57,72,103) 50%, rgb(57,72,103) 55%, rgb(57,72,103) 68%);
 background: -webkit-linear-gradient(-45deg,  rgb(155,164,181) 1%,rgb(155,164,181) 2%,rgb(155,164,181) 2%,rgb(155,164,181) 12%,rgb(155,164,181) 50%,rgb(57,72,103) 50%,rgb(57,72,103) 55%,rgb(57,72,103) 68%);
@@ -119,7 +170,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ba4b5', end
 }
 
 #pins{
-    display: inline-block;
+    display: none;
 
 }
 
@@ -192,50 +243,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ba4b5', end
 
 #P3{
     background-color: #9BA4B5;
-    padding: 70px;
     font-family: 'Mukta', sans-serif;
     font-size: 30px;
     color: white;
     height: 700px;
+    text-align: center;
 }
 
-
-#projetos {
-    display: flex;
+#projetos{
+    display: inline-block;
+    
+    
 }
+
 #projetos a {
     background-color: #394867;
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
     border-radius: 5px;
     text-decoration: none;
-    width: 400px;
-    height: 100px;
     color: #F1F6F9;
     text-align: center;
-    transition-duration: 0.8s;
+    margin: 30px;
+    display: block;
+    width: 200px;
+    height: 100px;
 }
 
 
-#projetos a:hover {
-    background-color: #394867;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    width: 500px;
-    height: 200px;
-    color: #F1F6F9;
-    text-align: center;
-    transition-duration: 0.7s;
-} 
 
 /* Pagina de Habilidades */
 
 
 #P4{
     background-color: #F1F6F9;
-    padding: 70px;
     font-family: 'Mukta', sans-serif;
     font-size: 30px;
     color: #394867;
@@ -243,37 +283,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ba4b5', end
     display: block;
 }
 
+
 #habilidades{
     display: flex;
+    width: 90%;
+    margin: 5%;
     justify-content: space-evenly;
-    margin-bottom: 20px;
 
 }
 
 #habilidades a {
     background-color: #394867;
     color: white;
-    margin: 10px;
-    padding: 10px;
-    display: block;
-    border-radius: 5px;
-    text-decoration: none;
-    width: 80px;
-    text-align: center;
-    
+    display: flex;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none ;
+    border-radius: 50%;
+
+   
     
 }
 
-#descricao {
-    padding: 10px;
-    margin: 10px;
-    background-color: #394867;
+#contentSkill{
+
+    background-color: #212A3E;
+    width: 90%;
+    height: 70%;
+    border-radius: 5px;
+    margin: 5%;
     color: #F1F6F9;
     display: none;
-    transition-duration: 0.9s;
+    text-align: center;
+    
 }
-
-#meucss{
-    transition-duration: 0.7s;
-}
-

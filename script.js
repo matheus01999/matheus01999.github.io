@@ -1,16 +1,42 @@
-// Tecnologia selecionada
-var selecionacss = document.getElementById('selcss')
+// BARRA DE NAVEGAÇÃO
+var menubotao = document.getElementById('buttonMenu')
+var verticalmenu = document.getElementById('menuvertical')
+var nav = document.getElementById('nav')
 
-// Campo com conteudo sobre a tecnologia selecionada
-var contentcss = document.getElementById('meucss')
+// BOTOES DE HABILIDADES
 
-// Funçãoes que mostra informações sobre a linguagem
-function showcss(){
-    contentcss.style.display = 'block'
+//selecionando os botoes
+var opcaojs = document.getElementById('skillJS')
+
+//conteudo dos botoes
+var contentskill = document.getElementById('contentSkill')
+
+
+function showmenu(){
+    menubotao.style.display = 'none'
+    verticalmenu.style.display = 'block'
+    nav.style.height = '0%'
+       
 }
 
+function hidemenu(){
+    menubotao.style.display = 'block'
+    verticalmenu.style.display = 'none'
+    nav.style.height = '50px'
 
-// Função que zera o DOM
-function unselected(){
-    contentcss.style.display = 'none'
+}
+
+function jsbutton(){
+    opcaojs.style.border = '2px solid #394867'
+    opcaojs.style.backgroundColor = '#F1F6F9'
+    opcaojs.style.color = '#394867'
+    opcaojs.style.transitionDuration =' 1s'
+
+
+    contentskill.style.display = 'block'
+
+
+
+    
+
 }
