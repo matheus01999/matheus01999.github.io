@@ -27,13 +27,15 @@ function hidemenu(){
 }
 
 function jsbutton(){
-    opcaojs.style.border = '2px solid #394867'
+    opcaojs.style.border = '2px solid #394867' 
     opcaojs.style.backgroundColor = '#F1F6F9'
     opcaojs.style.color = '#394867'
     opcaojs.style.transitionDuration =' 1s'
 
 
     contentskill.style.display = 'block'
+
+    
 
 
 
