@@ -1,7 +1,25 @@
 // BARRA DE NAVEGAÇÃO
-var menubotao = document.getElementById('buttonMenu')
-var verticalmenu = document.getElementById('menuvertical')
-var nav = document.getElementById('nav')
+var navbar = document.getElementById('navbar')
+var buttonopen = document.getElementById('buttonshow')
+var buttonclose = document.getElementById('buttonhide')
+
+
+var menu = document.getElementById('menu')
+
+function showmenu(){
+    menu.style.display = 'block'
+    buttonclose.style.display = 'block'
+    buttonopen.style.display = 'none'
+    navbar.style.height = '0%'
+}
+
+function hidemenu(){
+    menu.style.display = 'none'  
+    buttonopen.style.display = 'block'
+    navbar.style.height = '50px'
+    
+
+}
 
 // BOTOES DE HABILIDADES
 
@@ -12,19 +30,7 @@ var opcaojs = document.getElementById('skillJS')
 var contentskill = document.getElementById('contentSkill')
 
 
-function showmenu(){
-    menubotao.style.display = 'none'
-    verticalmenu.style.display = 'block'
-    nav.style.height = '0%'
-       
-}
 
-function hidemenu(){
-    menubotao.style.display = 'block'
-    verticalmenu.style.display = 'none'
-    nav.style.height = '50px'
-
-}
 
 function jsbutton(){
     opcaojs.style.border = '2px solid #394867' 
