@@ -1,4 +1,6 @@
+
 //  VARIAVES 
+
 
 //BARRA DE NAVEGAÇÃO
 var navbar = document.getElementById('navbar')
