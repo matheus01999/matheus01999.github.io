@@ -20,10 +20,19 @@ var contentcss = document.getElementById('contentcss')
 var contentjs = document.getElementById('contentjs')
 var contentboot = document.getElementById('contentboot')
 
+//Darkmode
+var themeButton = document.getElementById('themeButton')
+var jumbotron = document.getElementById('jumbotron')
+themeButton.addEventListener('change', () => {
+    jumbotron.classList.toggle('dark')
 
+})
 
 
 //FUNÇOES
+
+//Dark-mmode
+
 
 //BARRA DE NAVEGAÇÃO
 function showmenu(){
