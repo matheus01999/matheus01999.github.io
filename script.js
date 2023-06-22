@@ -23,8 +23,10 @@ var contentboot = document.getElementById('contentboot')
 //Darkmode
 var themeButton = document.getElementById('themeButton')
 var jumbotron = document.getElementById('jumbotron')
+var conteudo = document.getElementById('conteudo')
 themeButton.addEventListener('change', () => {
     jumbotron.classList.toggle('dark')
+    conteudo.classList.toggle('dark')
 
 })
 

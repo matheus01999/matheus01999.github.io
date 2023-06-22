@@ -5,10 +5,22 @@
 
 
 * {
-  padding: 0;
-  margin: 0;
+  
   font-family: "Roboto Condensed", sans-serif;
+  
 }
+
+main{
+  background-color: #f1f6f9;
+  color: #212a3e;
+
+}
+
+main.dark{
+  background-color: #9ba4b5;
+  color: #f1f6f9;
+}
+
 
 
 /* BARRA DE NAVEGAÇÃO */
@@ -19,6 +31,9 @@ nav {
   font-family: "Mukta", sans-serif;
   width: 100%;
 }
+
+/* BOTAO MODO DARK */
+
 
 .themeButton{
   opacity: 0;
@@ -70,12 +85,15 @@ nav {
 #P1 {
   font-family: "Mukta", sans-serif;
   font-size: 30px;
-  color: white;
-  width: 100%;
-  background-color: red;
-  height: 600px;
+  color: #212a3e;
+  width: 100%; 
   transition: background 0.2s linear;
   
+}
+
+#P1 .jumbotron{
+  margin-bottom: 0;
+ 
 }
 
 #jumbotron.dark{
@@ -89,8 +107,6 @@ nav {
   font-style: italic;
   padding: 20px;
 
-
-  
 }
 
 
@@ -108,7 +124,9 @@ nav {
   border: 2px solid #f1f6f9;
   border-radius: 7px;
   transition-duration: 0.8s;
-  height: 70px;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
 }
 
 #contatos a:active  {
@@ -123,12 +141,9 @@ nav {
 /* Pagina sobre mim */
 
 #P2 {
-  background-color: #f1f6f9;
   font-family: "Mukta", sans-serif;
   font-size: 30px;
-  color: #212a3e;
   width: 100%;
-  height: 700px;
   text-align: center;
 }
 
@@ -147,14 +162,20 @@ nav {
 /* Pagina de projetos */
 
 #P3 {
-  background-color: #9ba4b5;
-  color: white;
   text-align: center;
   width: 100%;
 }
 
 #projetos {
   width: 100%;
+}
+
+.fa-arrow-right{
+  color: #212a3e;
+}
+
+.fa-arrow-left{
+  color: #212a3e;
 }
 
 #projetos a {
@@ -180,12 +201,12 @@ nav {
 /* Pagina de Habilidades */
 
 #P4 {
-  background-color: #f1f6f9;
   font-family: "Mukta", sans-serif;
   font-size: 30px;
-  color: #394867;
   display: block;
   width: 100%;
+  height: 700px;
+  text-align: center;
 }
 
 #habilidades {
@@ -196,7 +217,6 @@ nav {
 }
 
 #habilidades a {
-  background-color: #394867;
   color: white;
   display: flex;
   width: 70px;
@@ -210,7 +230,7 @@ nav {
 #contentSkill {
   background-color: #212a3e;
   width: 90%;
-  height: 70%;
+
   border-radius: 5px;
   margin: 5%;
   color: #f1f6f9;
@@ -236,9 +256,12 @@ nav {
 
 #closecontent{
   float: right;
-  margin-right: 20px
+  margin: 10px
+  
   
 }
+
+
 
 #showskill{
   display: none;
@@ -425,28 +448,6 @@ nav {
 @media (min-width: 1201px) {
 
  
-  /* PRIMEIRA PAGINA */
-
-  #P1 {
-    font-family: "Mukta", sans-serif;
-    color: black;
-    width: 100%;
-    
-  }
-
-  #apresentacao {
-    font-family: "Roboto Condensed", sans-serif;
-    font-style: italic;
-    width: 100%;
-
-  }
-
-
-
-
-
-
-  
   #contatos a {
     color: #f1f6f9;
     margin: 5px;
@@ -473,11 +474,6 @@ nav {
   }
 
   #P2 {
-    background-color: #f1f6f9;
-    font-family: "Mukta", sans-serif;
-    font-size: 45px;
-    color: #212a3e;
-    width: 100%;
     text-align: center;
   }
   
@@ -486,15 +482,11 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 10%;
-    
   
   }
 
   #P3 {
-    background-color: #9ba4b5;
-    color: white;
     text-align: center;
-    width: 100%;
   }
   
   
