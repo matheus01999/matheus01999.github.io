@@ -30,6 +30,8 @@ nav {
   border-bottom: 5px solid #212a3e;
   font-family: "Mukta", sans-serif;
   width: 100%;
+  position: fixed;
+  top: 0%;
 }
 
 /* BOTAO MODO DARK */
@@ -205,15 +207,15 @@ nav {
   font-size: 30px;
   display: block;
   width: 100%;
-  height: 700px;
+  height: 800px;
   text-align: center;
 }
 
 #habilidades {
   display: flex;
   width: 90%;
-  margin: 5%;
   justify-content: space-evenly;
+  margin-top: 10px;
 }
 
 #habilidades a {
@@ -458,6 +460,7 @@ nav {
     height: 80px;
     width: 250px;
     font-size: 20px;
+    padding: 20px;
 
   }
   
@@ -468,20 +471,26 @@ nav {
     background-color: #f1f6f9;
     border: 2px solid #212a3e;
     transition-duration: 0.9s;
-    font-size: 25px;
+    font-size: 20px;
     width: 300px;
     text-decoration: none;
+    padding: 25px;
   }
 
   #P2 {
     text-align: center;
+    font-size: 40px;
+  }
+  #P2 h3{
+    font-size: 40px;
+
   }
   
   .sobremim{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10%;
+    font-size: 50px;
   
   }
 
@@ -489,6 +498,10 @@ nav {
     text-align: center;
   }
   
+  #P3 h3{
+    font-size: 40px;
+  }
+
   
   #projetos a {
     background-color: #394867;
@@ -496,21 +509,48 @@ nav {
     border-radius: 5px;
     text-decoration: none;
     color: #f1f6f9;
-    margin:  0% 20% 10% 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 150px;
+    width: 60%;
+    height: 600px;
+    margin: none;
+    border: #212a3e 1px solid;
   }
   
   #projetos h3 {
     background-color: #f1f6f9;
     color: #212a3e;
+    height: 100px;
     width: 100%;
+    padding: 30px;
+    font-size: 40px;
   }
   
-    
+
+  #P4 h3{
+    font-size: 40px;
+  }
+
+  #showskill{
+    height: 200px;
+    margin: 40px;
+    padding: 40px;
+    font-size: 50px;
+  }
+
+  #contentjs{
+    height: 550px;
+
+  }
+
+  #contentcss {
+    height: 550px;
+  }
+  
+  #contentboot{
+    height: 550px;
+  }
 
   
 
