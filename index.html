@@ -20,6 +20,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
   <title>Portifolio | Matheus Rocha</title>
 </head>
 
@@ -28,11 +29,12 @@
 
   <!-- BARRA DE NAVEGAÇÃO -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #394867;">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+  <nav id="barraNavegacao" class="navbar navbar-expand-lg navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse " id="conteudoNavbarSuportado">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -63,6 +65,9 @@
     </div>
   </nav>
 
+
+  <!--Conteudo-->
+
   <main id="conteudo">
 
     <div id="P1">
@@ -75,19 +80,27 @@
         <hr class="my-4">
         <p>Front-end | Back-end | Mobile</p>
 
-      <div id="contatos">
-        <a  href="https://www.linkedin.com/in/-matheusrocha/">Linkedin</a >
-        <a href="https://github.com/matheus01999">Github</a >
-      </div>
-      <div style="float: right;">
-        <img src="javascript.png">
-      </div>
+        <div id="contatos">
+          <a href="https://www.linkedin.com/in/-matheusrocha/">Linkedin</a>
+          <a href="https://github.com/matheus01999">Github</a>
+        </div>
+
+        <!-- Placas -->
+        <div id="plates">
+          <img src="javascript.png">
+          <img src="javascript.png">
+          <img src="javascript.png">
+          <img src="javascript.png">
+          <img src="javascript.png">
+          <img src="javascript.png">
+          <img src="javascript.png">
+        </div>
       </div>
     </div>
 
-    
 
 
+    <!-- Pagina 2 / Sobre-mim -->
 
     <div id="P2" class="page">
       <h3>Sobre-mim</h3>
@@ -102,7 +115,9 @@
         </p>
       </div>
       <hr>
-          </div>
+    </div>
+
+    <!-- Pagina 3 / Projetos -->
 
     <div id="P3">
       <h3>Meus Projetos</h3>
@@ -112,21 +127,27 @@
         <div id="carouselproject" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-                <div id="projetos">
-                  <a href=""><h3>Em breve</h3></a>
-                </div>
+              <div id="projetos">
+                <a href="">
+                  <h3>Em breve</h3>
+                </a>
+              </div>
             </div>
             <div class="carousel-item">
               <div id="teste">
                 <div id="projetos">
-                  <a href=""><h3>Em breve</h3></a>
+                  <a href="">
+                    <h3>Em breve</h3>
+                  </a>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div id="teste">
                 <div id="projetos">
-                  <a href=""><h3>Em breve</h3></a>
+                  <a href="">
+                    <h3>Em breve</h3>
+                  </a>
                 </div>
               </div>
             </div>
@@ -144,6 +165,8 @@
       <hr>
     </div>
 
+    <!-- Pagina 4 / Habilidades-->
+
     <div id="P4" class="page">
       <h3>Habilidades</h3>
       <div class="contentPage">
@@ -156,9 +179,9 @@
                 <a id="skillBoot" onclick="skillboot()">B</a>
               </div>
             </div>
-  
 
-  
+
+
             <a class="carousel-control-prev" href="#carouselskill" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
@@ -168,36 +191,46 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-  
+
           <div id="showskill">
             Clique em uma das habilidades para saber mais
           </div>
 
           <div id="contentSkill">
- 
-            <div id="contentjs"> 
+
+            <div id="contentjs">
               <span class="fa-regular fa-circle-xmark" id="closecontent" onclick="closecontent()"></span>
               <h1>Javascript</h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, fugiat, ipsa enim ipsam unde architecto voluptate eveniet corporis magni, voluptatum voluptatibus. Inventore ad magnam dolorum libero fugit voluptas quidem nisi?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, fugiat, ipsa enim ipsam unde architecto
+              voluptate eveniet corporis magni, voluptatum voluptatibus. Inventore ad magnam dolorum libero fugit
+              voluptas quidem nisi?
             </div>
 
-            <div id="contentcss" >
+            <div id="contentcss">
               <span class="fa-regular fa-circle-xmark" id="closecontent" onclick="closecontent()"></span>
               <h1>CSS</h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laudantium amet, praesentium deserunt ipsa corrupti quasi delectus nisi est et quas minima quod porro adipisci voluptate eum dolor cum! Quisquam!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laudantium amet, praesentium deserunt
+              ipsa corrupti quasi delectus nisi est et quas minima quod porro adipisci voluptate eum dolor cum!
+              Quisquam!
             </div>
 
-            <div id="contentboot" >
+            <div id="contentboot">
               <span class="fa-regular fa-circle-xmark" id="closecontent" onclick="closecontent()"></span>
               <h1>bootstrap</h1>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo repellendus pariatur hic porro tempore iure atque officia fugit? Numquam praesentium vitae repudiandae nobis aperiam ad rem tempore tempora exercitationem possimus.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo repellendus pariatur hic porro tempore
+              iure atque officia fugit? Numquam praesentium vitae repudiandae nobis aperiam ad rem tempore tempora
+              exercitationem possimus.
             </div>
 
 
 
+          </div>
         </div>
-      </div>
-      
+
+        <!-- Rodapé -->
+
+
+
   </main>
 
   <script src="script.js"></script>

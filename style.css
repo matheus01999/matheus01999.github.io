@@ -25,16 +25,16 @@ main.dark{
 
 /* BARRA DE NAVEGAÇÃO */
 
-nav {
+#barraNavegacao {
   background-color: #394867;
   border-bottom: 5px solid #212a3e;
   font-family: "Mukta", sans-serif;
   width: 100%;
-  position: fixed;
   top: 0%;
+  position: fixed;
 }
 
-/* BOTAO MODO DARK */
+/* BOTAO MODO TEMA */
 
 
 .themeButton{
@@ -80,6 +80,12 @@ nav {
 
 .fa-sun{
   color: #f39c12;
+}
+
+/*Plates */
+#plates{
+  background-color: #36A9EC;
+  float: right;
 }
 
 /* Pagina de contato */
@@ -146,7 +152,7 @@ nav {
   font-family: "Mukta", sans-serif;
   font-size: 30px;
   width: 100%;
-  text-align: center;
+  text-align:center;
 }
 
 
@@ -157,6 +163,7 @@ nav {
   align-items: center;
   height: 600px;
   padding: 10px;
+  
   
 
 }
